@@ -1,3 +1,67 @@
+* {
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
 .hide {
     display: none;
+}
+
+nav {
+    padding: 1em;
+    margin: 0;
+    background-color: #1EE8FF;
+    color: white;
+}
+
+.container {
+    margin-top: 1em !important;
+}
+
+.container input {
+    border-radius: 1em;
+    border-color: #1EE8FF;
+    border-style: solid;
+}
+
+form {
+    padding: 0 !important;
+    margin-bottom: 0.5em;
+}
+
+.tvit {
+    padding: 1em;
+    margin: 0.5em auto;
+    border-radius: 1.5em;
+    border-style: solid;
+    border-color: #1EE8FF;
+    border-width: 2px;
+}
+
+.tvit section {
+    display: inline-block;
+    margin-bottom: 0.5em;
+}
+
+.tvit section div {
+    display: inline-flex !important;
+    padding: 0;
+    margin: 0;
+}
+
+.tvit section div img {
+    max-height: 5em !important;
+    align-items: center;
+    margin-bottom: 0.5em;
+    border-radius: 50%;
+}
+
+.tvit section article {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.tvit p {
+    margin: auto 1em !important;
 }

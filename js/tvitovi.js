@@ -14,10 +14,10 @@ $("#tvitovi > #template-id").remove();
 
 function emputy() {
   let newHTML = tvit.replace('hide', '');
-  newHTML = newHTML.replace('neki-tekst-tvita', "Pokusajte sa unosom drugog pojma");
-  newHTML = newHTML.replace('template-username', "Nema tvitova za zadati pojam");
-  newHTML = newHTML.replace('template-element', "nema_tvitova");
+  newHTML = newHTML.replace('template-text', "Pokusajte sa unosom drugog pojma");
+  newHTML = newHTML.replace('template-name', "Nema tvitova za zadati pojam");
   $('#tvitovi').append(newHTML);
+  $("#link").remove();
 }
 
 function populate(res) {
@@ -30,8 +30,10 @@ function populate(res) {
         let newHTML = tvit.replace('hide', '');
         newHTML = newHTML.replace('template-text', element.text);
         newHTML = newHTML.replace('template-id', element.id);
+        newHTML = newHTML.replace('template-name', element.user.name);
         newHTML = newHTML.replace('template-username', element.user.screen_name);
         newHTML = newHTML.replace('template-username', element.user.screen_name);
+        newHTML = newHTML.replace('template-image', element.user.profile_image_url);
         $('#tvitovi').append(newHTML);
     });
   }
